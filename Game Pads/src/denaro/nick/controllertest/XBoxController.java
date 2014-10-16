@@ -23,6 +23,11 @@ public class XBoxController extends Thread
 		}
 	}
 	
+	public boolean isConnected()
+	{
+		return(controller!=null);
+	}
+	
 	public float leftAnalogDeadZone()
 	{
 		return(leftAnalogDeadZone);
@@ -164,7 +169,6 @@ public class XBoxController extends Thread
 			}
 			catch(InterruptedException e)
 			{
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
